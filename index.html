@@ -259,7 +259,58 @@
                 font-size: 2rem;
             }
         }
-    </style>
+            /* Seção Certificados */
+        .certificates {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .certificate-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certificate-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .certificate-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .certificate-card p {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .certificate-card .btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            margin-top: 1rem;
+        }
+        
+        .certificate-card .btn:hover {
+            background: white;
+            color: #667eea;
+        }
+	</style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -362,7 +413,45 @@
             </div>
         </div>
     </section>
+    <!-- Seção Certificados -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">📜 Meus Certificados</h2>
+            <div class="certificates-grid">
+                
+                <!-- Certificado 1 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">🎓</div>
+                    <h3>AutoCAD Certified User</h3>
+                    <p><strong>Emissor:</strong> Autodesk</p>
+                    <p><strong>Data:</strong> 2024</p>
+                    <p><strong>ID:</strong> ACU-123456</p>
+                    <a href="LINK_DO_CERTIFICADO.pdf" class="btn" target="_blank">📄 Ver Certificado</a>
+                </div>
 
+                <!-- Certificado 2 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">⚙️</div>
+                    <h3>Gestão de Projetos</h3>
+                    <p><strong>Emissor:</strong> Fundação Bradesco</p>
+                    <p><strong>Data:</strong> 2024</p>
+                    <p><strong>Carga horária:</strong> 40 horas</p>
+                    <a href="LINK_DO_CERTIFICADO.pdf" class="btn" target="_blank">📄 Ver Certificado</a>
+                </div>
+
+                <!-- Certificado 3 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">🔧</div>
+                    <h3>SolidWorks CSWA</h3>
+                    <p><strong>Emissor:</strong> Dassault Systèmes</p>
+                    <p><strong>Data:</strong> 2024</p>
+                    <p><strong>Nível:</strong> Associate</p>
+                    <a href="LINK_DO_CERTIFICADO.pdf" class="btn" target="_blank">📄 Ver Certificado</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Seção Contato -->
     <section id="contact" class="contact">
         <div class="container">
@@ -413,3 +502,4 @@
     </script>
 </body>
 </html>
+
